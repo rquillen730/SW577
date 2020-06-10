@@ -1,0 +1,203 @@
+---
+title: "Drawing Correlations Between Unemployment, Per Capita Personal Income, Hospital Availability, and Suicide Rates in the United States"
+output: github_document
+author: "J. Robert Quillen"
+date: "6/4/2020"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+library(readxl)
+Data_Set <- read_excel("C:/Users/17344/Desktop/Grad School/SW 577/Data Set.xlsx")
+View(Data_Set)
+```
+
+```{r}
+library(readxl)
+SR <- read_excel("C:/Users/17344/Desktop/Grad School/SW 670/Veteran Suicide Data/SR.xlsx")
+View(SR)
+```
+
+```{r}
+library(ggplot2)
+library(ggthemes)
+library(gridExtra)
+library(corrplot)
+library(knitr)
+library(tidyverse)
+library(skimr)
+library(psych)
+```
+
+# Introduction {.tabset} 
+
+
+
+## Overview
+
+In an effort to complete this study, data was collected from a variety of sources, including The Centers for Disease Control (suicide rates), The United States Census Bureau (population), SSTI (PCPI), NCSI (Unemployment), and the American Hospital Directory (Hospital Count). All figures collected, aside from those reflected in historical suicide rates, are representitive of historical figures reported in 2010.  Suicide rates were collected from 2005 - 2017; for the purpose of statistical analysis, suicide rates for the year 2010 will be utilized in order to remain consistant with other data present in this study.
+
+This exploration aims to explore the connection between suicidality, per capita personal income, unemployment, and hospital availablity in an effort to gain insight into ways to lower the overal suicide rate.
+
+## United States Suicide Rate
+
+The overall rate of suicide in the United States has been on the rise since 2007, as illustrated below.
+
+```{r SR}
+
+# Overall United States Suicide Rates, 2005 - 2017
+
+ggplot(data = SR,
+       aes(x = Year, y = GeneralPopulation)) +
+  geom_point(size = 2) +
+  geom_smooth(stat = 'smooth', color = 'Black', method = 'loess', formula = 'y ~ x') +
+          labs(title = "United States Overall Suicide Rate: 2005- 2017",
+            x = "Year", 
+            y = "Suicide Rate per 100,000 People") 
+```
+
+In 2010, State to State suicide rates range from a rate of 8.30 per 100,000 population (New Jersey and New York) to a rate of 25.20 per 100,000 population (Wyoming).
+
+```{r}
+describe(Data_Set$SR)
+```
+
+```{r}
+boxplot(Data_Set$SR)
+```
+
+```{r}
+hist(Data_Set$SR,main = "United States Suicide Rates, 2010", 
+     xlab = "Suicide Rate Per 100,000 People", 
+     ylab = "Number of States",
+     col = "red")
+```
+
+For a look at how each State fairs with regard to their current overall rate of suicide, please reference the bar chart below. (data reflective of 2010 figures)
+
+```{r}
+ggplot(Data_Set, 
+       aes(x = State, y = SR, fill = SR)) + 
+  geom_bar(stat = "identity") + 
+  coord_flip()
+```
+
+## Unemployment and Suicide in the United States - 2010
+
+In 2010, the average unemployment rate in the United States was 8.542 with a low of 3.80 (North Dakota) and high of 14.90 (Nevada).  In an effort to explore if unemployment rates potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method.  Ultimately statistical analysis revealed a weak negative correlation of -0.1309806 between rates of suicide in the United States and unemployment.
+
+```{r}
+describe(Data_Set$Unemployment)
+```
+
+```{r}
+boxplot(Data_Set$Unemployment)
+```
+
+```{r}
+hist(Data_Set$Unemployment,main = "United States Unemployment Rate, 2010",
+     xlab = "Unemployment Rate",
+     ylab = "Number of States",
+     col = "blue")
+```
+
+The correlation between unemployment and rate of suicide is weak and negative, as illustrated below.
+
+```{r}
+cor(Data_Set$Unemployment, Data_Set$SR)
+```
+
+## United States Per Capita Personal Income (PCPI)
+
+The average per capita personal income in the United States in 2010 was 39,440 with a low of 30,783 (Mississippi) and high of 57,347 (Connecticut).  In an effort to explore if PCPI potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method.  Ultimately statistical analysis revealed a moderate negative correlation of -0.465929 between rates of suicide in the United States and PCPI
+
+```{r}
+describe(Data_Set$PCPI)
+```
+
+```{r}
+boxplot(Data_Set$PCPI)
+```
+
+```{r}
+hist(Data_Set$PCPI,main = "United States Per Capita Income, 2010",
+     xlab = "PCPI",
+     ylab = "Number of States",
+     col = "green")
+```
+
+The correlation between PCPI and rate of suicide is moderately  negative, as illustrated below.
+
+```{r}
+cor(Data_Set$PCPI, Data_Set$SR)
+```
+
+## United States Hopsital Count Per State
+
+The number of hospitals per state range from 7 (Vermont) to 365 (Texas) with a mean of 76 hospitals per state.  In an effort to explore if hospitals per state potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method.  Ultimately statistical analysis revealed a moderate negative correlation of -0.3903531 between rates of suicide in the United States and hospital count.
+
+
+```{r}
+describe(Data_Set$Hospital)
+```
+
+```{r}
+boxplot(Data_Set$Hospital)
+```
+
+```{r}
+hist(Data_Set$Hospital,main = "Unites States Hospitals Per State",
+     xlab = "Number of Hospitals",
+     ylab = "Number of States")
+```
+
+```{r}
+cor(Data_Set$Hospital, Data_Set$SR)
+```
+
+## CORRELATION DATA - IN PROGRESS
+
+```{r}
+head(Data_Set)
+```
+
+```{r}
+cor(Data_Set[2:7 , 2:7])
+```
+
+```{r}
+M = cor(Data_Set[2:7 , 2:7])
+corrplot(M, method = "number")
+```
+
+```{r}
+M = cor(Data_Set[2:7 , 2:7])
+corrplot(M, method = "pie")
+```
+
+## MAPS - IN PROGRESS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
