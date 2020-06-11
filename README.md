@@ -103,7 +103,7 @@ CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABL
 ## Unemployment  0.9506902
 ## Hospital      1.0000000
 
-
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-23-1.png)
 
 MAPPING THE DATA
 
