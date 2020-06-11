@@ -22,8 +22,9 @@ The overall rate of suicide in the United States has been on the rise since 2007
 
 In 2010, State to State suicide rates range from a rate of 8.30 per 100,000 population (New Jersey and New York) to a rate of 25.20 per 100,000 population (Wyoming).
 
-vars  n  mean   sd   median  trimmed  mad  min  max   range skew kurtosis   se
-  1  50 16.45  4.51   15.7    16.32   5.19 8.3  25.2  16.9  0.17  -0.77    0.64
+##    vars  n  mean   sd median trimmed  mad min  max range skew kurtosis   se
+## X1    1 50 16.45 4.51   15.7   16.32 5.19 8.3 25.2  16.9 0.17    -0.77 0.64
+
 
 
 
