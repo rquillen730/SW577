@@ -70,9 +70,42 @@ The number of hospitals per state range from 7 (Vermont) to 365 (Texas) with a m
 ##    vars  n  mean    sd median trimmed   mad min max range skew kurtosis   se
 ## X1    1 50 76.86 74.93     59   62.77 50.41   7 365   358 2.13     5.11 10.6
 
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-18-1.png)
+
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-17-1.png)
+
+## [1] -0.3903531
+
+CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
+
+## # A tibble: 6 x 7
+##   State      Population    Area    SR  PCPI Unemployment Hospital
+##   <chr>           <dbl>   <dbl> <dbl> <dbl>        <dbl>    <dbl>
+## 1 Alabama       4779736  52420.  16.5 34073          9.1       89
+## 2 Alaska         710231 665384.  24.6 47773          7.9       10
+## 3 Arizona       6392017 113990.  19.2 34185          9.6       73
+## 4 Arkansas      2915918  53179.  18.3 31991          7.9       52
+## 5 California   37254523 163695.  10.9 42411         12.5      343
+## 6 Colorado      5029196 104094.  21.9 41877          8.9       55
+
+##               Population       Area         SR         PCPI Unemployment
+## Population    1.00000000 -0.1376521 -0.5924475 -0.060773229  0.959787275
+## Area         -0.13765209  1.0000000  0.6068523  0.169556995 -0.238590596
+## SR           -0.59244754  0.6068523  1.0000000 -0.338260305 -0.642249427
+## PCPI         -0.06077323  0.1695570 -0.3382603  1.000000000  0.004393821
+## Unemployment  0.95978727 -0.2385906 -0.6422494  0.004393821  1.000000000
+## Hospital      0.99749672 -0.1653125 -0.5832403 -0.125189133  0.950690163
+##                Hospital
+## Population    0.9974967
+## Area         -0.1653125
+## SR           -0.5832403
+## PCPI         -0.1251891
+## Unemployment  0.9506902
+## Hospital      1.0000000
 
 
-Mapping Suicide, Unemployment, PCPI, Hopsital Count, and Total Population
+
+MAPPING THE DATA
 
 ![](https://raw.githubusercontent.com/rquillen730/SW577/master/Tableau%20Map.jpg)
 
