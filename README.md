@@ -57,6 +57,18 @@ The average per capita personal income in the United States in 2010 was 39,440 w
 ##    kurtosis     se
 ## X1     0.28 836.21
 
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-14-1.png)
+
+1[](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-13-1.png)
+
+## [1] -0.465929
+
+HOSPITAL COUNT AND SUICIDE IN THE UNITED STATES - 2010
+
+The number of hospitals per state range from 7 (Vermont) to 365 (Texas) with a mean of 76 hospitals per state. In an effort to explore if hospitals per state potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method. Ultimately statistical analysis revealed a moderate negative correlation of -0.3903531 between rates of suicide in the United States and hospital count.
+
+##    vars  n  mean    sd median trimmed   mad min max range skew kurtosis   se
+## X1    1 50 76.86 74.93     59   62.77 50.41   7 365   358 2.13     5.11 10.6
 
 
 
