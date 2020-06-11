@@ -31,6 +31,14 @@ In 2010, State to State suicide rates range from a rate of 8.30 per 100,000 popu
 
 For a look at how each State fairs with regard to their current overall rate of suicide, please reference the bar chart below. (data reflective of 2010 figures)
 
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-7-1.png)
+
+In 2010, the average unemployment rate in the United States was 8.542 with a low of 3.80 (North Dakota) and high of 14.90 (Nevada). In an effort to explore if unemployment rates potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method. Ultimately statistical analysis revealed a weak negative correlation of -0.1309806 between rates of suicide in the United States and unemployment.
+
+##    vars  n mean   sd median trimmed mad min  max range skew kurtosis  se
+## X1    1 50 8.54 2.12   8.55    8.52 1.7 3.8 14.9  11.1 0.21     0.49 0.3
+
+
 
 
 
