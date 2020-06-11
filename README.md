@@ -1,20 +1,20 @@
 # SW577
 
 
-Drawing Correlations Between Unemployment, Per Capita Personal Income, Hospital Availability, and Suicide Rates in the United States
+CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
 
 J. Robert Quillen
 6/4/2020
 
-Introduction
+INTRODUCTION
 
-Overview
+OVERVIEW
 
 In an effort to complete this study, data was collected from a variety of sources, including The Centers for Disease Control (suicide rates), The United States Census Bureau (population), SSTI (PCPI), NCSI (Unemployment), and the American Hospital Directory (Hospital Count). All figures collected, aside from those reflected in historical suicide rates, are representitive of historical figures reported in 2010. Suicide rates were collected from 2005 - 2017; for the purpose of statistical analysis, suicide rates for the year 2010 will be utilized in order to remain consistant with other data present in this study.
 This exploration aims to explore the connection between suicidality, per capita personal income, unemployment, and hospital availablity in an effort to gain insight into ways to lower the overal suicide rate.
 
 
-United States Suicide Rate
+UNITED STATES SUICIDE RATE 
 
 The overall rate of suicide in the United States has been on the rise since 2007, as illustrated below.
 
@@ -33,11 +33,29 @@ For a look at how each State fairs with regard to their current overall rate of 
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-7-1.png)
 
+UNEMPLOYMENT AND SUICIDE IN THE UNITED STATES - 2010
+
 In 2010, the average unemployment rate in the United States was 8.542 with a low of 3.80 (North Dakota) and high of 14.90 (Nevada). In an effort to explore if unemployment rates potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method. Ultimately statistical analysis revealed a weak negative correlation of -0.1309806 between rates of suicide in the United States and unemployment.
 
 ##    vars  n mean   sd median trimmed mad min  max range skew kurtosis  se
 ## X1    1 50 8.54 2.12   8.55    8.52 1.7 3.8 14.9  11.1 0.21     0.49 0.3
 
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-10-1.png)
+
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-9-1.png)
+
+The correlation between unemployment and rate of suicide is weak and negative, as illustrated below.
+
+## [1] -0.1309806
+
+PCPI AND SUICIDE IN THE UNITED STATES - 2010
+
+The average per capita personal income in the United States in 2010 was 39,440 with a low of 30,783 (Mississippi) and high of 57,347 (Connecticut). In an effort to explore if PCPI potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method. Ultimately statistical analysis revealed a moderate negative correlation of -0.465929 between rates of suicide in the United States and PCPI.
+
+##    vars  n     mean      sd  median  trimmed     mad   min   max range skew
+## X1    1 50 39439.74 5912.88 38702.5 38832.18 5804.38 30783 57347 26564 0.83
+##    kurtosis     se
+## X1     0.28 836.21
 
 
 
