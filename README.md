@@ -1,18 +1,15 @@
-# SW577
-
-
-CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
+#  BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
 
 J. Robert Quillen
 6/4/2020
 
-INTRODUCTION
+# INTRODUCTION
 
 Over the course of this semester I worked with data from various agencies in order to explore any possible correlations between suicide in the United States and Unemployment, per capita personal income, and hospital availability.  After obtaining this data I worked with a variety of data visualization software in order to present my findings in a variety of ways.  
 
 This portfolio was generated utilizing R Markdown software.
 
-OVERVIEW
+# OVERVIEW
 
 In an effort to complete this study, data was collected from a variety of sources, including The Centers for Disease Control (suicide rates), The United States Census Bureau (population), SSTI (PCPI), NCSI (Unemployment), and the American Hospital Directory (Hospital Count). All figures collected, aside from those reflected in historical suicide rates, are representitive of historical figures reported in 2010. Suicide rates were collected from 2005 - 2017; for the purpose of statistical analysis, suicide rates for the year 2010 will be utilized in order to remain consistant with other data present in this study.
 This exploration aims to explore the connection between suicidality, per capita personal income, unemployment, and hospital availablity in an effort to gain insight into ways to lower the overal suicide rate.
@@ -41,7 +38,12 @@ UNEMPLOYMENT AND SUICIDE IN THE UNITED STATES - 2010
 
 In 2010, the average unemployment rate in the United States was 8.542 with a low of 3.80 (North Dakota) and high of 14.90 (Nevada). In an effort to explore if unemployment rates potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method. Ultimately statistical analysis revealed a weak negative correlation of -0.1309806 between rates of suicide in the United States and unemployment.
 
-Mean Umemployment - 8.54                                                                                                            Standard Deviation - 2.12                                                                                                         Median Unemployment - 8.55                                                                                                          Minimum Unemployment - 3.8                                                                                                         Maximum Unemployment - 14.9                                                                                                       Range - 11.1                                                                                                   
+Mean Umemployment - 8.54                                                                                                
+Standard Deviation - 2.12                                                                                                  
+Median Unemployment - 8.55                                                                                                
+Minimum Unemployment - 3.8                                                                                                
+Maximum Unemployment - 14.9                                                                                                 
+Range - 11.1                                                                                                   
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-10-1.png)
 
