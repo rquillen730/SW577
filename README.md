@@ -89,19 +89,15 @@ The number of hospitals per state range from 7 (Vermont) to 365 (Texas) with a m
 
 # CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
 
-#              Population  Area       SR         PCPI         Unemployment  Hospital                                         
-Population     1.00000000 -0.137652  -0.5924475 -0.060773229  0.959787275   0.9974967                                              
-Area          -0.13765209  1.0000000  0.6068523  0.169556995 -0.238590596  -0.1653125                                                 
-SR            -0.59244754  0.6068523  1.0000000 -0.338260305 -0.642249427  -0.5832403                                               
-PCPI          -0.06077323  0.1695570 -0.3382603  1.000000000  0.004393821  -0.1251891                                       
-Unemployment   0.95978727 -0.2385906 -0.6422494  0.004393821  1.000000000   0.9506902                                          
-Hospital       0.99749672 -0.1653125 -0.5832403 -0.125189133  0.950690163   1.0000000                                                   
+After completing all statistical analysis, I was able to utilize of the RStudio software to compile a comprehensive table displaying the different correlations between all variables analyzed.  The tables below display more information than was covered in the above-mentioned material, much of which will be utilized for continued analysis and study.
+
+![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-22-1.png)
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-23-1.png)
 
 # MAPPING THE DATA
 
-After compliling all of the data and running the statistical analysis I was then able to utilize another software program, Tableau, to map all of my finds in a density map illustrated below.  Tableau offers the ability to make interactive maps, and in the interactive version of the map presented below, you are able to click on each State and instantly receive information regarding suicide rate, PCPI, hospital count, unemployment rate, and overall population.  Additionally, again opperating within the interactive format of the mapping software, you are able to compare different states to one another, group states into regions for comparison, and generate your own geographic constrants in order to draw comparisons in a whole new way.
+After compliling all of the data and running the statistical analysis I was then able to utilize another software program, Tableau, to map all of my finds in a density map illustrated below.  Tableau offers the ability to make interactive maps, and in the interactive version of the map presented below, you are able to click on each State and instantly receive information regarding suicide rate, PCPI, hospital count, unemployment rate, and overall population.  Additionally, again operating within the interactive format of the mapping software, you are able to compare different states to one another, group states into regions for comparison, and generate your own geographic constraints in order to draw comparisons in a whole new way.
 
 ![](https://raw.githubusercontent.com/rquillen730/SW577/master/Tableau%20Map.jpg)
 
