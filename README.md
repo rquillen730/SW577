@@ -89,12 +89,12 @@ The number of hospitals per state range from 7 (Vermont) to 365 (Texas) with a m
 
 # CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
 
-               Population  Area       SR         PCPI         Unemployment  Hospital                                                     
-Population     1.00000000 -0.137652  -0.5924475 -0.060773229  0.959787275   0.9974967                                                   
-Area          -0.13765209  1.0000000  0.6068523  0.169556995 -0.238590596  -0.1653125                                                   
-SR            -0.59244754  0.6068523  1.0000000 -0.338260305 -0.642249427  -0.5832403                                                   
-PCPI          -0.06077323  0.1695570 -0.3382603  1.000000000  0.004393821  -0.1251891                                                   
-Unemployment   0.95978727 -0.2385906 -0.6422494  0.004393821  1.000000000   0.9506902                                                   
+               Population  Area       SR         PCPI         Unemployment  Hospital                                         
+Population     1.00000000 -0.137652  -0.5924475 -0.060773229  0.959787275   0.9974967                                              
+Area          -0.13765209  1.0000000  0.6068523  0.169556995 -0.238590596  -0.1653125                                                 
+SR            -0.59244754  0.6068523  1.0000000 -0.338260305 -0.642249427  -0.5832403                                               
+PCPI          -0.06077323  0.1695570 -0.3382603  1.000000000  0.004393821  -0.1251891                                       
+Unemployment   0.95978727 -0.2385906 -0.6422494  0.004393821  1.000000000   0.9506902                                          
 Hospital       0.99749672 -0.1653125 -0.5832403 -0.125189133  0.950690163   1.0000000                                                   
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-23-1.png)
