@@ -7,7 +7,7 @@ J. Robert Quillen
 
 Over the course of this semester I worked with data from various agencies in order to explore any possible correlations between suicide in the United States and Unemployment, per capita personal income, and hospital availability.  After obtaining this data I worked with a variety of data visualization software in order to present my findings in a variety of ways.  
 
-This portfolio was generated utilizing R Markdown software and Tableau.
+This portfolio was generated utilizing R Markdown and Tableau software.
 
 # OVERVIEW
 
@@ -53,9 +53,7 @@ Range - 11.1
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-9-1.png)
 
-The correlation between unemployment and rate of suicide is weak and negative, as illustrated below.
-
--0.1309806
+The correlation between unemployment and rate of suicide is weak and negative: -0.1309806.
 
 # PCPI AND SUICIDE IN THE UNITED STATES - 2010
 
@@ -72,20 +70,20 @@ Range - 26564
 
 1[](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-13-1.png)
 
--0.465929
-
 # HOSPITAL COUNT AND SUICIDE IN THE UNITED STATES - 2010
 
 The number of hospitals per state range from 7 (Vermont) to 365 (Texas) with a mean of 76 hospitals per state. In an effort to explore if hospitals per state potentially influenced rates of suicide, a bivariate correlation was determined using the Pearson method. Ultimately statistical analysis revealed a moderate negative correlation of -0.3903531 between rates of suicide in the United States and hospital count.
 
-##    vars  n  mean    sd median trimmed   mad min max range skew kurtosis   se
-## X1    1 50 76.86 74.93     59   62.77 50.41   7 365   358 2.13     5.11 10.6
+Mean Hospital Count - 76.86                                                                                                            
+Standard Deviation - 74.93                                                                                                      
+Median Hospital Count - 59                                                                                                             
+Minimum Hospital Count - 7                                                                                                           
+Maximum Hospital Count - 365                                                                                                           
+Range - 358    
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-18-1.png)
 
 ![](https://github.com/rquillen730/SW577/blob/master/Drawing-Correlations-Between-Unemployment%2C-Per-Capita-Personal-Income%2C-Hospital-Availability%2C-and-Suicide-Rates-in-the-United-States_files/figure-gfm/unnamed-chunk-17-1.png)
-
--0.3903531
 
 # CORRELATIONS BETWEEN UNEMPLOYMENT, PER CAPITA PERSONAL INCOME, HOSPITAL AVAILABLITY, AND SUICIDE RATES IN THE UNITED STATES.
 
