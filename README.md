@@ -99,4 +99,6 @@ After compiling  all of the data and running the statistical analysis I was then
 
 ![](https://github.com/rquillen730/SW577/blob/master/Tableau%20Map%201.jpg)
 
+![](https://github.com/rquillen730/SW577/blob/master/Tableau%20Map%202.jpg)
+
 
