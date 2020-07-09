@@ -97,6 +97,6 @@ After completing all statistical analysis, I was able to utilize of the RStudio 
 
 After compiling  all of the data and running the statistical analysis I was then able to utilize another software program, Tableau, to map all of my finds in a density map illustrated below.  Tableau offers the ability to make interactive maps, and in the interactive version of the map presented below, you are able to click on each State and instantly receive information regarding suicide rate, PCPI, hospital count, unemployment rate, and overall population (captured in the second image below).  Additionally, again operating within the interactive format of the mapping software, you are able to compare different states to one another, group states into regions for comparison, and generate your own geographic constraints in order to draw comparisons in a whole new way.
 
-https://github.com/rquillen730/SW577/blob/master/Tableau%20Map%201.jpg
+![](https://github.com/rquillen730/SW577/blob/master/Tableau%20Map%201.jpg)
 
 
